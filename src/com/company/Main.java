@@ -25,10 +25,8 @@ public class Main {
         Client rob = new Client("Rob Bob[Fake]", "Krusty Krabs", "1234234234", "rob@rob.com", bobBirthDate);
         Banker banker = new Banker("Banker Lanker", "Rich Place", "123453534", "banker@bank.com", bobBirthDate);
         bob.getAccount().transferTo(banker, rob, 100);
+        rob.getAccount().subtractMoney(banker, 100);
 
-//        bob.getAccount().addMoney(banker);
-        System.out.println(bob.getAccount().balance);
-        System.out.println(rob.getAccount().balance);
 
     }
 
