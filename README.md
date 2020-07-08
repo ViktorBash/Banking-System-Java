@@ -16,7 +16,7 @@ This will be a banking system written in Java using OOP concepts and implementat
     - Banker class will have more attributes/privileges
 3. Account class
     - Banking number (string)
-    - Banker/Client it belongs to
+    - Client it belongs to
     - Amount of money in the account
     - later on add recent transactions ArrayList
     
