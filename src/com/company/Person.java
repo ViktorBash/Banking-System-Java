@@ -3,6 +3,8 @@ package com.company;
 import java.util.Calendar;
 
 abstract class Person {
+    // This is the abstract class for a person which will be the inherited in the Banker and Client classes
+
     private String fullName;
     private String address;
     private String SSN;
@@ -11,6 +13,7 @@ abstract class Person {
     private String firstName;
     private String lastName;
 
+    // Creating person and adding their various attributes
     public Person(String fullName, String address, String SSN, String email, Calendar birthDate) {
         this.fullName = fullName;
         this.address = address;
@@ -18,15 +21,14 @@ abstract class Person {
         this.email = email;
         this.birthDate = birthDate;
 
+        // Take the full name and split it to get store the first name and last name
         String[] nameArr = fullName.split(" ");
         this.firstName = nameArr[0];
         this.lastName = nameArr[1];
 
     }
 
-    public void printInfo() {
-        System.out.println(fullName + " lives in " + address);
-    }
+    // All of these methods below are getters to return various properties
 
     public String getSSN() {
         return this.SSN;
